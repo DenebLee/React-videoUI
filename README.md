@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# React-VideoUI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a UI creation project for future projects.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Install
 
-### `yarn start`
+```bash
+$yarn add
+$npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Order
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+# Note
+#
+# !important You have to install a node 
+# This project don't inform server information.
+$ git clone "this repository address"
+$ cd React-videoUI
+# install pacakeges for node
+$ npm install 
+or
+$ yarn add
+# when you install is done 
+$ npm start 
+or
+$ yarn start
+```
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## package.json
 
-### `yarn build`
+```json
+{
+   "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "notistack": "^1.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-snackbar-alert": "^2.1.0",
+    "styled-components": "^5.3.0",
+    "web-vitals": "^1.0.1"
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project's structure is based on create-react-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+React-videoUI
+├── 📁public
+│    ├── 📄 index.html  
+├── 📂src             
+│   ├── 📄 index.js             # parent component
+│   ├── 📄 index.css
+│   ├── 📄 Toolbar.js           # Toolbar ui source used for video conferencing apps
+│   └── 📄 useSnackbar.js       # Snackbar component 
+│   └── 📄 styledSnackbar.js    # Customizable components for snackbar layout
+│
+├── package-lock.json
+└── package.json
+└── README.md
+└── yarn.lock
+```
 
-### `yarn eject`
+## Tech
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| module name                                                         | description                                                                                                                                                                                                       |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [react-snackbar-alert](https://joeattardi.github.io/react-snackbar-alert/)                      | React Snackbar Alert is a very simple library for "snackbar" style notifications. It's a quick and lightweight way to let your users know what's going on in your app. |
+| [create-react-app](https://www.npmjs.com/package/create-react-app)  | Create React apps with no build configuration.                                                                                                                                                                    |
+| [styled-component](https://www.npmjs.com/package/styled-components) | Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅                                                                                                    |
+| [@material-ui](https://material-ui.com/)                  | Material-UI is simply a library that allows us to import and use different components to create a user interface in our React applications. This saves a significant amount of time since the developers do not need to write everything from scratch                 |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Jeongseob Lee
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Github: [DenebLee](https://github.com/DenebLee)

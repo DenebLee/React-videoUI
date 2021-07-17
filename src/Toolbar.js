@@ -19,7 +19,9 @@ function Toolbar() {
   const useStyles = makeStyles((theme) => ({
     root: {
       "& > *": {
-        margin: theme.spacing(2),
+        margin: theme.spacing(1.4),
+        width: theme.spacing(5),
+        height: theme.spacing(5), //(css메소드) : theme.spacing(피치)
       },
     },
   }));
@@ -60,60 +62,63 @@ function Toolbar() {
         <div className={classes.root}>
           {/* //플로팅 버튼으로 툴바 생성 */}
 
-          <Fab color="primary" aria-label="add" onClick={() => {
+          <Tooltip title={<h4>채팅 켜기</h4>} placement="top">
+          <Fab  aria-label="add" onClick={() => {
                   showSnackbar()
                 }}>
-            <Tooltip title={<h2>채팅 켜기</h2>} placement="top">
               <ChatIcon
-                style={{ fontSize: 28 }}
+                style={{ fontSize: 22 }}
                 
               ></ChatIcon>
-            </Tooltip>
           </Fab>
+          </Tooltip>
 
-          <Fab color="primary" aria-label="add" onClick={() => {
+          <Tooltip title={<h4>카메라 켜기</h4>} placement="top">
+          <Fab  aria-label="add" onClick={() => {
                   showSnackbar()
                 }}>
-            <Tooltip title={<h2>카메라 켜기</h2>} placement="top">
               <VideocamIcon
-                style={{ fontSize: 28 }}
+                style={{ fontSize: 22 }}
                 
               ></VideocamIcon>
+            </Fab>
             </Tooltip>
-          </Fab>
 
-          <Fab color="primary" aria-label="add" onClick={() => {
+          
+            <Tooltip title={<h4>화상회의 종료</h4>} placement="top" style={{height:'10px'}}>
+              <Fab aria-label="add" onClick={() => {
                   showSnackbar()
                 }}>
-            <Tooltip title={<h2>화상회의 종료</h2>} placement="top">
               <CallEndIcon
                 style={{ color: red[500], fontSize: 28 }}
                 
               ></CallEndIcon>
-            </Tooltip>
           </Fab>
+          </Tooltip>
 
-          <Fab color="primary" aria-label="add"  onClick={() => {
+          <Tooltip title={<h4>오디오 켜기</h4>}placement="top">
+            <Fab aria-label="add"  onClick={() => {
                   showSnackbar()
                 }}>
-            <Tooltip title={<h2>오디오 켜기</h2>}placement="top">
+            
               <MicIcon
-                style={{ fontSize: 28 }}
+                style={{ fontSize: 22 }}
                
               ></MicIcon>
-            </Tooltip>
-          </Fab>
+           </Fab>
+           </Tooltip>
 
-          <Fab color="primary" aria-label="add" onClick={() => {
+         
+            <Tooltip title={<h4>화면 공유하기</h4>} placement="top">
+              <Fab  onClick={() => {
                  showSnackbar()
                 }}>
-            <Tooltip title={<h2>화면 공유하기</h2>} placement="top">
               <ScreenShareIcon
-                style={{ fontSize: 28 }}
+                style={{ fontSize: 22 }}
                 
               ></ScreenShareIcon>
-            </Tooltip>
           </Fab>
+          </Tooltip>
         </div>
       </Div>
   );

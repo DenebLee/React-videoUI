@@ -1,14 +1,13 @@
-# Note
-#
-# !important You have to install a node 
-# This project don't inform server information.
+# ✅ Note 
+‼‼ You have to install a node 
+ This project don't inform server information.
 $ git clone "this repository address"
 $ cd React-videoUI
-# install pacakeges for node
+# ✅install pacakeges for node
 $ npm install 
 or
 $ yarn add
-# when you install is done 
+# ✅when you install is done 
 $ npm start 
 or
 $ yarn start
@@ -35,7 +34,7 @@ $ yarn start
 }
 ```
 
-## Project Structure
+## ✅Project Structure
 
 This project's structure is based on create-react-app
 
@@ -56,7 +55,7 @@ React-videoUI
 └── yarn.lock
 ```
 
-## Tech
+## ✅Tech
 
 | module name                                                         | description                                                                                                                                                                                                       |
 | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,7 +64,7 @@ React-videoUI
 | [styled-component](https://www.npmjs.com/package/styled-components) | Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅                                                                                                    |
 | [@material-ui](https://material-ui.com/)                  | Material-UI is simply a library that allows us to import and use different components to create a user interface in our React applications. This saves a significant amount of time since the developers do not need to write everything from scratch                 |
 
-## Author
+## ✅Author
 
 Jeongseob Lee
 

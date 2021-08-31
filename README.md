@@ -1,13 +1,13 @@
-# ✅ Note 
+## ✅ Note 
 ‼‼ You have to install a node 
  This project don't inform server information.
 $ git clone "this repository address"
 $ cd React-videoUI
-# ✅install pacakeges for node
+## ✅install pacakeges for node
 $ npm install 
 or
 $ yarn add
-# ✅when you install is done 
+## ✅when you install is done 
 $ npm start 
 or
 $ yarn start
